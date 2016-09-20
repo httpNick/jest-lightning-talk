@@ -1,0 +1,25 @@
+exports[`test adds element when button is clicked 1`] = `
+<div
+  className="App">
+  <button
+    onClick={[Function bound handleClick]}>
+    Click me
+  </button>
+  <ul />
+</div>
+`;
+
+exports[`test adds element when button is clicked 2`] = `
+<div
+  className="App">
+  <button
+    onClick={[Function bound handleClick]}>
+    Click me
+  </button>
+  <ul>
+    <li>
+      element 0
+    </li>
+  </ul>
+</div>
+`;
