@@ -1,6 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import App from './App';
+import incrementAsync from './some-async-thing';
 
 it('adds element when button is clicked', () => {
 
@@ -25,5 +26,9 @@ it('adds element when button is clicked', () => {
     .toJSON();
   expect(tree)
     .toMatchSnapshot();
+});
 
+it('increments my number', () => {
+  return incrementAsync(1)
+    .then(x => expect(x).toEqual(2));
 });
